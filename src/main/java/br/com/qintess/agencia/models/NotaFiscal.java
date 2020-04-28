@@ -32,6 +32,7 @@ public class NotaFiscal {
 	
 	@Column(nullable = false, name = "PRECO")
 	private double preco;
+	
 	@Column(nullable = true, name = "TOTAL")
 	private double total;
 		
