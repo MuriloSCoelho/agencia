@@ -32,7 +32,15 @@ public class CarroService {
 		}
 		return null;
 	}
-		 	
+	
+	/*
+	 * public Carro buscaPorMarca(String marca) { Carro carro =
+	 * carroRepo.buscaPorMarca(marca);
+	 * 
+	 * if (carro.getMarca().isEmpty()) { return null; } return carro;
+	 * 
+	 * }
+	 */		 	
 	public void salva(CarroDTO carroDTO) {
 		ModelMapper modelMapper = new ModelMapper();
 		

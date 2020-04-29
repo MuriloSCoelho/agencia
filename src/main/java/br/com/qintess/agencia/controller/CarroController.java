@@ -40,7 +40,15 @@ public class CarroController {
 		}
 		return new ResponseEntity<>(HttpStatus.NOT_FOUND);
 	}
-	 		
+	
+	/*
+	 * @GetMapping("/{marca}") public ResponseEntity<Carro>
+	 * buscaPorMarca(@RequestBody String marca) { Carro carro =
+	 * carroService.buscaPorMarca(marca);
+	 * 
+	 * if (carro != null) { return new ResponseEntity<>(HttpStatus.OK); } return new
+	 * ResponseEntity<>(HttpStatus.NOT_FOUND); }
+	 */	 		
 	@PostMapping
 	public ResponseEntity<Carro> salvaCarro(@RequestBody CarroDTO carroDTO) {
 		carroService.salva(carroDTO);

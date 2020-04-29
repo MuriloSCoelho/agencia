@@ -12,7 +12,7 @@ import br.com.qintess.agencia.models.Carro;
 
 	void save(Optional<Carro> carro);
 
-	/* Optional<Carro> buscarPorMarca(String marca); */  
+	/* Carro buscaPorMarca(String marca); */
 	
   }
  

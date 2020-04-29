@@ -5,6 +5,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -32,6 +34,10 @@ public class Carro {
 	
 	@Column(nullable = false, length = 100, name = "VALOR")
 	private double valor;
+	
+	@ManyToOne
+	@JoinColumn(name = "NotaFiscal", referencedColumnName = "id")
+	private NotaFiscal nf;
 	
 	public Carro() {
 		
