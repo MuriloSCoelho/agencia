@@ -1,5 +1,6 @@
 package br.com.qintess.agencia.models;
 
+import java.time.LocalDate;
 import java.util.List;
 
 import javax.persistence.Column;
@@ -32,6 +33,9 @@ public class NotaFiscal {
 	
 	@Column(nullable = false, name = "QTD")
 	private int qtd;
+	
+	@Column(nullable = false, name = "DATA")
+	private LocalDate data;
 		
 	@Column(nullable = true, name = "TOTAL")
 	private double total;
